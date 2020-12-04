@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Free Web tutorials">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <div class="navcontainer">
+            <h3 id="maintitle" onclick="openNewPage()">Company</h3>
+            <nav class="navitems">
+                <a class="nav-link active" href="#" target="_blank">Projects</a>
+                <a class="nav-link active" href="#" target="_blank">Sales</a>
+                <a class="nav-link active" href="#" target="_blank">Messages</a>
+            </nav>
+            <button onclick="alert('you are signed out!')" id="button" class="button2">Sign Out</button>
+        </div>
+        </header>
+    <main>
+        <div class="container">
+            <h1 class="title">Sales</h1>
+            <div class="inputbox">
+                <form action="script.js">
+                    <label class="boxtitle">Filter by quarter:</label>
+                    <input type="checkbox" id="q1" name="q1" value="quarterone">
+                    <label for="q1">Q1</label>
+                    <input type="checkbox" id="q2" name="q2" value="quartertwo">
+                    <label for="q2">Q2</label>
+                    <input type="checkbox" id="q3" name="q3" value="quarterthree">
+                    <label for="q3">Q3</label>
+                    <input type="checkbox" id="q4" name="q4" value="quarterfour">
+                    <label for="q4">Q4</label>
+                </form>
+            </div>
+            <div class="tablechart">
+                <table>
+                    <tr class="titlechart">
+                        <th>Month</th>
+                        <th>Sales</th>
+                        <th>Top Salesperson</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>January</th>
+                        <th>$50,000.00</th>
+                        <th>Angela</th>
+                    </tr>
+                    <tr id="white">
+                        <th>Febuary</th>
+                        <th>$10,000.00</th>
+                        <th>Roberto</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>March</th>
+                        <th>$85,000.00</th>
+                        <th>Maria</th>
+                    </tr>
+                    <tr id="white">
+                        <th>April</th>
+                        <th>$56,000.00</th>
+                        <th>Stacy</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>May</th>
+                        <th>$68,000.00</th>
+                        <th>William</th>
+                    </tr>
+                    <tr id="white">
+                        <th>June</th>
+                        <th>$32,000.00</th>
+                        <th>Darrel</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>July</th>
+                        <th>$21,000.00</th>
+                        <th>Stacy</th>
+                    </tr>
+                    <tr id="white">
+                        <th>August</th>
+                        <th>$18,000.00</th>
+                        <th>Angela</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>September</th>
+                        <th>$118,000.00</th>
+                        <th>Maria</th>
+                    </tr>
+                    <tr id="white">
+                        <th>October</th>
+                        <th>$52,000.00</th>
+                        <th>Stacy</th>
+                    </tr>
+                    <tr id="grey">
+                        <th>November</th>
+                        <th>$87,000.00</th>
+                        <th>Angela</th>
+                    </tr>
+                    <tr id="white">
+                        <th>December</th>
+                        <th>$121,000.00</th>
+                        <th>William</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>  
+    </body>
+</html>
