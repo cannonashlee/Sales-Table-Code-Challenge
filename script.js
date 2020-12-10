@@ -4,10 +4,15 @@ const checkbox3 = document.querySelector('#q3');
 const checkbox4 = document.querySelector('#q4');
 
 checkbox.addEventListener('change', (event) => {
-  if (event.target.checked) {
-    alert('checked');
+  let firstquarter = document.getElementsByClassName('qt1');
+  let firstsetquarter = document.getElementsByClassName('qt2 qt3 qt4');
+
+  if (checkbox.checked == true) {
+    for (var i=0; i < firstquarter.length; i += 1){
+      firstquarter[i].style.display = 'block'; //switch variables to maybe make it easier
+    } //also might have to switch class and id css issue when box is checked
   } else {
-    alert('not checked'); 
+    firstquarter[i].style.display = "none";  
   }
 })
 
