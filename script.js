@@ -10,7 +10,7 @@ checkbox.addEventListener('change', (event) => {
   if (checkbox.checked == true) {
     for (var i=0; i < firstquarter.length; i += 1){
       firstquarter[i].style.display = 'block'; //switch variables to maybe make it easier
-    } //also might have to switch class and id css issue when box is checked
+    } 
   } else {
     firstquarter[i].style.display = "none";  
   }

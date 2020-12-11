@@ -76,13 +76,13 @@ table {
     color: #FFFFFF; 
 }
 
-#grey {
+.grey {
     background-color: #D3D3D3;
     color: #000000;
     font-size: 14px;
 }
 
-#white {
+.white {
     background-color: #FFFFFF;
     color: #000000;
     font-size: 14px;
