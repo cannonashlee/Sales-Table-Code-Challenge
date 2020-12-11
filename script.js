@@ -9,12 +9,14 @@ checkbox.addEventListener('change', (event) => {
 
   if (checkbox.checked == true) {
     for (var i=0; i < firstquarter.length; i += 1){
-      firstquarter[i].style.display = 'block'; //switch variables to maybe make it easier
+      firstquarter[i].style.display = 'table-row';
     } 
   } else {
-    firstquarter[i].style.display = "none";  
+    for (var i=0; i < firstquarter.length; i += 1){
+      firstquarter[i].style.display = 'none';  
+    }
   }
-})
+});
 
 checkbox2.addEventListener('change', (event) => {
   if (event.target.checked) {

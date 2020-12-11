@@ -59,12 +59,13 @@ body {
     justify-content: center; 
 }
 
-table, th, td {
+table, th {
     border: 1px solid #000000 ;
     border-color: #A9A9A9;
     padding: 12px;
      
 }
+
 
 table {
     border-collapse: collapse;
