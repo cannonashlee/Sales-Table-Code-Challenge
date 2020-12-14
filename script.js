@@ -62,3 +62,15 @@ checkbox4.addEventListener('change', (event) => {
     }
   }
 });
+
+const sales = document.querySelector('.title');
+
+sales.addEventListener('click', (event) => {
+  alert('click worked!');
+});
+
+const topsalesperson = document.querySelector('.top');
+
+topsalesperson.addEventListener('click', (event) => {
+  alert('click worked!');
+}); 

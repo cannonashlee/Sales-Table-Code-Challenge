@@ -96,3 +96,7 @@ table {
     padding: 10px; 
     color: #FFFFFF; 
 }
+
+.title:hover, .top:hover {
+    cursor: pointer;
+}
