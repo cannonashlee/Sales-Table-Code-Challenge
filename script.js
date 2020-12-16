@@ -43,7 +43,7 @@ checkbox3.addEventListener('change', (event) => {
     }
   } else {
     for (var i=0; i < thirdquarter.length; i += 1){
-      thirdquarter[i].style.display = "none"; 
+      thirdquarter[i].style.display = "none";
     }
   }
 });
@@ -66,8 +66,11 @@ checkbox4.addEventListener('change', (event) => {
 const sales = document.querySelector('.title');
 
 sales.addEventListener('click', (event) => {
-  alert('click worked!');
-});
+  let wholetable = document.querySelector('#table');
+  let numoftbody = document.querySelector('#table').tBodies.length;
+  wholetable.deleteRow(1);
+  console.log(numoftbody);
+});                      
 
 const topsalesperson = document.querySelector('.top');
 
